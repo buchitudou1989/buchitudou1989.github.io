@@ -349,9 +349,9 @@
                     var typed = new Typed("#subtitle", {
                         strings: [ 
                             
-                                "从来没有真正的绝境, 只有心灵的迷途",
+                                "非淡泊无以明志，非宁静无以致远",
                             
-                                "Never really desperate, only the lost of the soul",
+                                "静以修身，俭以养德",
                             
                         ],
                         startDelay: 300,
@@ -814,6 +814,15 @@ $(function () {
 
     
     
+    
+        
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/sakura.js"><\/script>');
+            }
+        </script>
     
 
     <!-- 雪花特效 -->
