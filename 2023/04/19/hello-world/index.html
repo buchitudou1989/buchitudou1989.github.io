@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="keywords" content="Hello World, Estuckin">
     <meta name="description" content="welcome
-jiayou">
+one last kiss">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -159,6 +159,19 @@ jiayou">
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '2a1c68bab4a7c58f210f0ce36a3371aa4f90e9a36ca7a8c5f85bc0e8db098e42';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('对不起，你不是自己人！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -225,7 +238,7 @@ jiayou">
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>welcome</p>
-<h2 id="jiayou"><a href="#jiayou" class="headerlink" title="jiayou"></a>jiayou</h2>
+<h2 id="one-last-kiss"><a href="#one-last-kiss" class="headerlink" title="one last kiss"></a>one last kiss</h2>
                 
             </div>
             <hr/>
