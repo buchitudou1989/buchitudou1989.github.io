@@ -4,7 +4,7 @@ jQuery(document).ready(function ($) {
   $("body").click(function (e) {
     // 点击弹出文字数组
     var a = new Array
-      ("JavaScript", "Java", "C", "Python", "PHP", "Ruby", "Go", "C++", "Typescript", "C#");
+      ("猪猪怡", "Java", "C", "Python", "PHP", "Ruby", "Go", "C++", "Typescript", "C#");
     var $i = $("<span/>").text(a[a_idx]);
     a_idx = (a_idx + 1) % a.length;
     var x = e.pageX,

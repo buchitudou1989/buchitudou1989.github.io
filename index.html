@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Estuckin">
+    <meta name="keywords" content="怡的小窝">
     <meta name="description" content="爱你是定理，这是证明">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Estuckin</title>
+    <title>怡的小窝</title>
     <link rel="icon" type="image/png" href="/medias/%E5%B0%8F%E7%8C%AA1.png">
     
 
@@ -101,7 +101,7 @@
                     
                     <img src="/medias/%E5%B0%8F%E7%8C%AA1.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">Estuckin</span>
+                    <span class="logo-span">怡的小窝</span>
                 </a>
             </div>
             
@@ -139,7 +139,7 @@
         
         <img src="/medias/%E5%B0%8F%E7%8C%AA1.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">Estuckin</div>
+        <div class="logo-name">怡的小窝</div>
         <div class="logo-desc">
             
             爱你是定理，这是证明
@@ -185,7 +185,7 @@
         <div class="brand">
             <div class="title center-align">
                 
-                乘风破浪
+                生日快乐！
                 
             </div>
 
@@ -356,12 +356,12 @@
                         <div class="dream">
     
     <div class="title center-align">
-        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;one last kiss
+        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;亲爱的美怡
     </div>
     
     <div class="row">
         <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            I love u more than u ever know
+            生日快乐呀
         </div>
     </div>
 </div>
@@ -481,8 +481,7 @@
                     <a href="/2023/04/21/%E5%98%BF%E6%98%AF%E6%88%91%E5%91%80/">
                         <div class="card-image">
                             
-                            
-                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Hello World">
                             
                             <span class="card-title">Hello World</span>
                         </div>
@@ -519,9 +518,9 @@ one last kiss
                     <a href="/2023/04/21/%E4%BD%A0%E5%A5%BD%E5%91%80/">
                         <div class="card-image">
                             
-                            <img src="/%5Cthemes%5Cmatery%5Csource%5Cmedias%5Cfeatureimages%5C3.jpg" class="responsive-img" alt="Nice">
+                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="乘风破浪">
                             
-                            <span class="card-title">Nice</span>
+                            <span class="card-title">乘风破浪</span>
                         </div>
                     </a>
 
@@ -556,8 +555,7 @@ one last kiss
                     <a href="/2023/04/19/hello-world/">
                         <div class="card-image">
                             
-                            
-                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="Hello World">
                             
                             <span class="card-title">Hello World</span>
                         </div>
@@ -658,6 +656,9 @@ one last kiss
                         var diff = t2 - t1;
                         var diffYears = Math.floor(diff / years);
                         var diffDays = Math.floor((diff / days) - diffYears * 365);
+                        var diffHours = Math.floor((diff % days) / hours);
+                        var diffMinutes = Math.floor((diff % hours) / minutes);
+                        var diffSeconds = Math.floor((diff % minutes) / seconds);
 
                         // 区分是否有年份.
                         var language = 'zh-CN';
@@ -665,7 +666,7 @@ one last kiss
                             document.getElementById("year").innerHTML = todayYear;
                             var daysTip = 'This site has been running for ' + diffDays + ' days';
                             if (language === 'zh-CN') {
-                                daysTip = '乘风破浪 ' + diffDays + ' 天';
+                                daysTip = '乘风破浪 ' + diffDays + ' 天'+ diffHours + '时' + diffMinutes + '分'+diffSeconds + '秒';
                             } else if (language === 'zh-HK') {
                                 daysTip = '本站已運行 ' + diffDays + ' 天';
                             }
@@ -675,7 +676,7 @@ one last kiss
                             var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
                                 + diffDays + ' days';
                             if (language === 'zh-CN') {
-                                yearsAndDaysTip = '乘风破浪 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                                yearsAndDaysTip = '乘风破浪 ' + diffYears + ' 年 ' + diffDays + ' 天'+ diffHours + '时' + diffMinutes + '分'+diffSeconds + '秒';
                             } else if (language === 'zh-HK') {
                                 yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
                             }
