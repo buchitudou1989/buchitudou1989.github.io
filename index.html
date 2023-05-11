@@ -656,9 +656,11 @@ one last kiss
                         var diff = t2 - t1;
                         var diffYears = Math.floor(diff / years);
                         var diffDays = Math.floor((diff / days) - diffYears * 365);
-                        var diffHours = Math.floor((diff % days) / hours);
-                        var diffMinutes = Math.floor((diff % hours) / minutes);
-                        var diffSeconds = Math.floor((diff % minutes) / seconds);
+                        var diffHours = Math.floor((diff / hours) - diffYears * 365
+                                                   * 24 - diffDays * 24);
+                        var diffMinutes = Math.floor((diff / minutes) - diffYears *365 * 24 * 60 - diffDays * 24 * 60 - diffHours * 60);
+                        var diffSeconds = Math.floor((diff / seconds) - diffYears * 365 * 24 * 60 * 60 - diffDays * 24 * 60 * 60  - diffHours
+                                                     * 60 * 60 - diffMinutes * 60);
 
                         // 区分是否有年份.
                         var language = 'zh-CN';
@@ -682,12 +684,18 @@ one last kiss
                             }
                             document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
                         }
+                        var timer = setInterval(calcSiteTime);
                     }
 
                     calcSiteTime();
                 </script>
             
             <br>
+            
+                <span id="icp"><img src="/medias/icp.png"
+                                    style="vertical-align: text-bottom;"/>
+                <a href="http://beian.miit.gov.cn/" target="_blank">京ICP备2023011778号</a>
+            </span>
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
