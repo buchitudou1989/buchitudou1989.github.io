@@ -165,15 +165,11 @@
                             
                                 "静以修身，俭以养德",
                             
-                                "臣本布衣，躬耕于南阳",
-                            
-                                "三尺微命，一介书生",
-                            
                         ],
-                        startDelay: 30,
-                        typeSpeed: 20,
+                        startDelay: 300,
+                        typeSpeed: 100,
                         loop: true,
-                        backSpeed: 10,
+                        backSpeed: 50,
                         showCursor: true
                     });
                 </script>
@@ -761,10 +757,9 @@
                             }
                             document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
                         }
-                        var timer = setInterval(calcSiteTime);
+                        var timer = setInterval(calcSiteTime);                      
                     }
-
-                    calcSiteTime();
+                    //calcSiteTime();
                 </script>
             
             <br>
@@ -1019,10 +1014,7 @@ $(function () {
     
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
-    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
-    <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
-    <script type="text/javascript" src="/js/fireworks.js"></script>
-    
+
 </body>
 
 </html>
